@@ -1,0 +1,12 @@
+#mercurial configuration
+[ui]
+username = Jaebin Lee<jblee@riseup.net>
+merge = internal:merge
+ 
+[diff]
+git = 1
+showfunc = 1
+unified = 8
+
+[defaults]
+commit = -v

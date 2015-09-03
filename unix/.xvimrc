@@ -1,0 +1,15 @@
+" XVimrc configuration file "
+
+set ignorecase      " ignore case in (search) patterns 
+set incsearch       " do incremental searching 
+set hlsearch        " highlight search term 
+set wrapscan
+set blinkcursor
+"set showmatch       " show matching bracket (briefly jump)
+
+nmap ,w :w<CR>
+nmap <C-S> :w<CR>
+
+inoremap jk <ESC>
+inoremap jj <ESC>
+

@@ -1,0 +1,8 @@
+set autoindent
+set ignorecase
+set smartcase
+set number
+set incsearch
+set hlsearch
+
+imap jk <esc>
