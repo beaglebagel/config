@@ -1,7 +1,14 @@
-general configurations
-====================================
+**Configurations (Unix/Windows)**
+======================================
 
-- .vimrc
-- .bashrc
-- .tmux.conf
+- **Unix**
+  - .bashrc
+  - .vimrc
+  - .ideavimrc(intelliJ vim)
+  - .vrapperrc(eclipse vim)
+  - .xvimrc(xcode vim)
+- **Windowsi**
+  - .bashrc(for cygwin)
+
 - template.xml (eclipse code template)
+- .hgrc (mercurial)
