@@ -1,14 +1,13 @@
-**Configurations (Unix/Windows)**
-======================================
+## **Configurations (Unix/Windows)**
 
+- template.xml (eclipse code template)
+- .hgrc (mercurial)
+- .bash_profile
 - **Unix**
   - .bashrc
   - .vimrc
   - .ideavimrc(intelliJ vim)
   - .vrapperrc(eclipse vim)
   - .xvimrc(xcode vim)
-- **Windowsi**
+- **Windows**
   - .bashrc(for cygwin)
-
-- template.xml (eclipse code template)
-- .hgrc (mercurial)
