@@ -35,6 +35,7 @@ export VIMFILES=$VIMHOME/Resources/vim/runtime
 export JAVA_7_HOME=$(/usr/libexec/java_home -v1.7)
 export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
 export JAVA_HOME=$JAVA_8_HOME
+
 #export PYTHON_HOME=/usr/local/Cellar/python/2.7.7_1
 #export LLVM_HOME=/usr/local/opt/llvm
 export LLVM_HOME=/usr/local/Cellar/llvm/3.4.1
@@ -74,6 +75,11 @@ source /usr/local/bin/virtualenvwrapper.sh
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 #export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
+
+# java switcher aliases.
+alias java7='export JAVA_HOME=$JAVA_7_HOME'
+alias java8='export JAVA_HOME=$JAVA_8_HOME'
+
 
 # Interactive operation...
 # alias rm='rm -i'
