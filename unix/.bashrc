@@ -54,7 +54,7 @@ export PATH=/usr/local/bin:$PATH
 #export PATH=$PYTHON_HOME/bin:$PATH
 export PATH=$PATH:$LLVM_HOME/bin
 # clean up duplicates in path.
-PATH=$(echo "$PATH" | awk -v RS=':' -v ORS=":" '!a[$1]++')
+PATH=`printf %s "$PATH" | awk -v RS=: '{ if (!arr[$0]++) {printf("%s%s",!ln++?"":":",$0)}}'`
 
 # pythonpath for python module used by mozilla project.
 export MOZILLA_PYTHON=$WORKSPACE/mozilla-central/python
