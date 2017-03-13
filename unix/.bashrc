@@ -53,6 +53,9 @@ export PATH=/usr/local/bin:$PATH
 #export PATH=$PATH:$ANDROID_SDK_HOME/tools:$ANDROID_SDK_HOME/platform-tools:$ANDROID_SDK_HOME/build-tools/17.0.0
 #export PATH=$PYTHON_HOME/bin:$PATH
 export PATH=$PATH:$LLVM_HOME/bin
+# clean up duplicates in path.
+PATH=$(echo "$PATH" | awk -v RS=':' -v ORS=":" '!a[$1]++')
+
 # pythonpath for python module used by mozilla project.
 export MOZILLA_PYTHON=$WORKSPACE/mozilla-central/python
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages
