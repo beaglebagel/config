@@ -218,18 +218,21 @@ alias java8='export JAVA_HOME=$JAVA_8_HOME'
 # for extending regex?
  shopt -s extglob
 
+ # History related settings.
  export HISTIGNORE="&:ls:exit:lo:ll:history:pwd:..:cd"
  export HISTCONTROL=ignoredups:ignorespace
  export HISTFILESIZE=20000000
  export HISTSIZE=1000000
- PROMPT_COMMAND="history -n; history -a"
+ export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
+ # check win size change and align texts accordingly.
+ shopt -s checkwinsize
  # autocorrects cd misspellings   
  shopt -s cdspell
  # live updating .bash_history
  shopt -s histappend
  # Combine multiline commands into one in history
  shopt -s cmdhist
- # must press ctrl-D 2+1 times to exit shell
 
+ # must press ctrl-D 2+1 times to exit shell
  export IGNOREEOF="2"
