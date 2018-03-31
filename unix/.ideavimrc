@@ -1,8 +1,26 @@
-set autoindent
-set ignorecase
-set smartcase
-set number
-set incsearch
-set hlsearch
+:set autoindent
+:set ignorecase
+:set smartcase
+:set number
+:set incsearch
+:set hlsearch
+:set autodetect
+:set surround
+:set list
 
-imap jk <esc>
+:inoremap jk <esc>
+:nmap O O<esc>j
+:nmap o o<esc>k
+
+:vnoremap > >gv
+:vnoremap < <gv
+:nnoremap <Tab> >>_
+
+:nnoremap <S-Tab> <<_
+:inoremap <S-Tab> <C-D>
+:vnoremap <S-Tab> >gv
+:vnoremap <S-Tab> <gv
+
+:nmap <Tab> <Tab>
+
+:nnoremap <F9> :%s/\s*$//e<CR>
