@@ -1,5 +1,6 @@
 ## **Configurations (Unix/Windows)**
 
+- .gitconfig
 - template.xml (eclipse code template)
 - .hgrc (mercurial)
 - .bash_profile
