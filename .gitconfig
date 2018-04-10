@@ -1,0 +1,54 @@
+[user]
+        email = jblee@riseup.net
+        name = jblee
+[push]
+        default = matching
+[core]
+        excludesfile = /home/jlee/.gitignore_global
+        whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+        autocrlf = input
+
+[alias]
+    st = status
+    stat = status
+    ci = commit
+    br = branch -avv
+    ba = branch -a
+    co = checkout
+    df = diff
+    lg = log -p
+    lol  = log --color --graph --decorate       --abbrev-commit --pretty=oneline
+    lola = log --color --graph --decorate --all --abbrev-commit --pretty=oneline
+    lolb = log --color --graph            --all --abbrev-commit --date=short     --format=format:'%C(green)%h%C(reset) %C(cyan)%ad%C(reset) %C(white)%s%C(reset) %C(bold white)- %an%C(reset)%C(bold yellow)%d%C(reset)'
+    lolc = log --color --graph            --all --abbrev-commit                  --format=format:'%C(green)%h%C(reset) %C(cyan)%ai%C(reset) %C(red)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n        %C(white)%s %C(bold white)- %an%C(reset)%n'
+    ls = ls-files
+    cod = !git checkout $USER-dev
+
+[color]
+    ui = auto
+
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+
+[color "diff"]
+    whitespace = red reverse
+
+[branch]
+    autosetupmerge  = false
+    autosetuprebase = always
+
+[big-picture]
+    viewer = google-chrome
