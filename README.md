@@ -1,14 +1,15 @@
-## **Configurations (Unix/Windows)**
+## **.dotfile configurations + vim files **
 
+- .gitignore_global
 - .gitconfig
-- template.xml (eclipse code template)
-- .hgrc (mercurial)
 - .bash_profile
-- **Unix**
-  - .bashrc
-  - .vimrc
-  - .ideavimrc(intelliJ vim)
-  - .vrapperrc(eclipse vim)
-  - .xvimrc(xcode vim)
-- **Windows**
-  - .bashrc(for cygwin)
+- .bashrc
+- .inputrc
+- .tmux.conf
+- .vimrc
+- .ideavimrc
+- .vrapperrc
+- .xvimrc
+- .hgrc
+- idea_settings.jar
+- template.xml (eclipse code template)
